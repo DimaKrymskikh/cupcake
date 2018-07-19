@@ -1,0 +1,36 @@
+.Loader {
+    position: fixed;
+    top: 125px;
+    color: red;
+    font-size: 2rem;
+    z-index: 10;
+}
+.Loader span {
+    position: absolute;
+    left: 60px;
+    top: 12px
+}
+.Loader .circle {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    border-left: solid red;
+    border-top: solid red;
+    border-right: solid red;
+    border-bottom: solid BlanchedAlmond;
+    border-width: 5px;
+    border-radius: 25px;
+    animation: cir infinite 1s linear;
+}
+    
+@keyframes cir {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

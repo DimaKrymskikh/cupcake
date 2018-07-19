@@ -1,0 +1,197 @@
+body, p, h1, h2, h3, h4, h5, h6, ul, article {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+h1 {
+    color: blue;
+    padding: .5rem 0;
+    font-size: 2rem;
+}
+
+h2 {
+    color: DarkOrange;
+    padding-bottom: .5rem;
+    font-size: 2rem;
+    width: 100%;
+}
+
+h3 {
+    font-size: 1.25rem;
+    margin-bottom: .5rem;
+    color: DarkOrange;
+}
+
+h4 {
+    font-size: 1rem;
+    color: SteelBlue;
+}
+
+button {
+    font-size: 1.2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: .2rem;
+    background-color: Coral;
+    color:  white;
+    border: solid 2px DarkKhaki;
+    border-radius: .5rem;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: all .5s ease;
+}
+button:hover {
+    background-color: DarkOrange;
+}
+
+header {
+    background-color: Wheat;
+    box-shadow: 0 2px 5px SaddleBrown;
+    position: relative;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+.container:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.container.main {
+    min-height: 2000px;
+    background-color: BlanchedAlmond;
+    padding-top: 85px;
+}
+
+footer {
+    padding-top: 1rem;
+    height: 4rem;
+}
+
+main {
+    width: 75%;
+    float: left;
+    padding-right: 1rem;
+    box-sizing: border-box;
+    min-height: 1rem;
+}
+
+aside {
+    width: 25%;
+    float: left;
+    padding-right: 1rem;
+    box-sizing: border-box;
+    position: relative;
+}
+
+article {
+    background-color: NavajoWhite;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    box-sizing: border-box;
+}
+article:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+article img {
+    float: left;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+article img:hover {
+    box-shadow: 0 0 5px 2px hotpink;
+}
+
+main article h3, 
+main article h4, 
+main article h5,
+.description {
+    padding-left: 60px;
+}
+
+.description {
+    padding-top: .5rem;
+    margin-bottom: .5rem;
+    background-color: Cornsilk;
+}
+.description p {
+    font-size: 1rem;
+    padding-bottom: .5rem;
+}
+
+main article h3 {
+    cursor: pointer;
+}
+main article h3:hover {
+    color: red;
+}
+
+main article h4 {
+    margin-bottom: .5rem;
+}
+
+main article button {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+main article h5 {
+    display: inline-block;
+    font-size: 1rem;
+}
+
+main article input {
+    width: 40px;
+    margin-left: .5rem;
+}
+
+aside article {
+    padding-bottom: 30px;
+    border-bottom: 1px solid black;
+}
+
+.basket {
+    position: fixed;
+    width: 292px;
+    overflow: auto;
+    max-height: 700px;
+}
+
+.basket h4 {
+    margin-bottom: 1rem;
+}
+
+.basket h5 {
+    color: red;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.basket article button {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
